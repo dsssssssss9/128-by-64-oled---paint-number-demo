@@ -8,15 +8,15 @@ input.onButtonPressed(Button.A, function () {
     }
 })
 input.onButtonPressed(Button.B, function () {
-    for (let index2 = 0; index2 <= 3; index2++) {
-        for (let index = 0; index <= 6; index++) {
+    for (let index = 0; index <= 6; index++) {
+        for (let index2 = 0; index2 <= 3; index2++) {
             kitronik_VIEW128x64.drawsegment(Segment_List[index], step_list[index2])
             kitronik_VIEW128x64.refresh()
             basic.pause(200)
         }
-        kitronik_VIEW128x64.refresh()
-        basic.pause(200)
     }
+    kitronik_VIEW128x64.refresh()
+    basic.pause(200)
 })
 let Segment_List: string[] = []
 let step_list: number[] = []
