@@ -1,6 +1,7 @@
 // Display Posistion number ( 0-3) in matching posistion
 input.onButtonPressed(Button.A, function () {
     kitronik_VIEW128x64.clear()
+    kitronik_VIEW128x64.refresh()
     for (let index = 0; index <= 3; index++) {
         // character posistions from 0 - LHS to 3 - RHS
         // 
